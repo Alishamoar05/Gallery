@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #f6efe7;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.photo {
+  background: white;
+  padding: 12px 12px 25px;
+  border-radius: 8px;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.photo img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+.photo p {
+  margin-top: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+
+.rotate-left {
+  transform: rotate(-2deg);
+}
+
+.rotate-right {
+  transform: rotate(2deg);
+}
+
+
+.photo:hover {
+  transform: rotate(0deg) scale(1.03);
+}
